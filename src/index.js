@@ -56,13 +56,22 @@ function addBreeds(json){
     breedUl.append(breedLi);
     
   }
-  
-  breedLi.addEventListener('onmouseover', function(){
-    
-    breedLi.style.backgroundColor = 'red';
-  })
-  
+
 }
+
+window.addEventListener('load', function(){
+  
+  const li = document.querySelector('li');
+  for(const liElement of li){
+    
+    liElement.addEventListener('click', function(){
+      
+      liElement.style.color = 'red';
+      
+    });
+  }
+  
+});
 
 
 
