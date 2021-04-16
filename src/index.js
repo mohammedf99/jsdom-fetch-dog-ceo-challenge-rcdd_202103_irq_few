@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function(){
   
   
   fetch(breedURL).then(function(response){
-    console.log(response.json());
-    // return response.json();
+    // console.log(response.json());
+    return response.json();
   }).then(function(json){
-    // addBreeds(json);
+    addBreeds(json);
   });
   
   
