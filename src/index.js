@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function(){
   
   
   fetch(BREED_URL).then(function(response){
-    return response.json();
+    console.log(response.json());
+    // return response.json();
   }).then(function(json){
     addBreeds(json);
   });
