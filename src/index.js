@@ -42,11 +42,11 @@ function displayImage(json){
 }
 
 let breedNames = [];
-const breedUl = document.querySelector('#dog-breeds');
+
 
 function addBreeds(json){
   
-  
+  const breedUl = document.querySelector('#dog-breeds');
   breedNames = Object.keys(json.message);
   let breedLi;
   for(let i = 0; i < breedNames.length; i++){
@@ -70,7 +70,7 @@ window.addEventListener('load', function(){
   const dropDown = document.querySelector('#breed-dropdown');
   
   dropDown.addEventListener('change', function(){
-    
+    const breedUl = document.querySelector('#dog-breeds');
     breedUl.innerText = '';
     
     for(let i = 0; i < breedNames.length; i++){
