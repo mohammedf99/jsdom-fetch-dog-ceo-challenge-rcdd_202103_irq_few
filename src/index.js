@@ -41,21 +41,21 @@ function displayImage(json){
 }
 
 
-// function addBreeds(json){
+function addBreeds(json){
   
-//   breedNames = Object.key(r.message);
-//   const breedUl = document.querySelector('#dog-breeds');
+  breedNames = Object.key(r.message);
+  const breedUl = document.querySelector('#dog-breeds');
   
-//   for(let i = 0; i < breedNames.length; i++){
+  for(let i = 0; i < breedNames.length; i++){
     
-//     const breedLi = document.createElement('li');
+    const breedLi = document.createElement('li');
   
-//     breedLi.innerHTML = `<img src="${json[i]}" alt="image breed">`;
+    breedLi.innerHTML = `<img src="${json[i]}" alt="image breed">`;
     
-//     breedUl.appendChild(breedLi);
-//   }
+    breedUl.appendChild(breedLi);
+  }
   
-// }
+}
 
 
 
