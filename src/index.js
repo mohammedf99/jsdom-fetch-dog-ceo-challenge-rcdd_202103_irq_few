@@ -57,7 +57,15 @@ function addBreeds(json){
     
   }
   
+  
+  breedLi.addEventListener('click', function(){
+    
+    breedLi.style.color = 'red';
+  })
+  
 }
+
+
 
 
 
