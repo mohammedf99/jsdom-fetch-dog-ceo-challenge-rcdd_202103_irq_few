@@ -62,11 +62,11 @@ function addBreeds(json){
 window.addEventListener('load', function(){
   
   const li = document.querySelector('li');
-  for(const liElement of li){
+  for(let i = 0; i < li.length; i++){
     
-    liElement.addEventListener('click', function(){
+    li[i].addEventListener('click', function(){
       
-      liElement.style.color = 'red';
+      li[i].style.color = 'red';
       
     });
   }
