@@ -41,13 +41,12 @@ function displayImage(json){
   }
 }
 
-let breedNames = [];
+let breedNames = Object.keys(json.message);
 
 
 function addBreeds(json){
   
   const breedUl = document.querySelector('#dog-breeds');
-  breedNames = Object.keys(json.message);
   let breedLi;
   for(let i = 0; i < breedNames.length; i++){
     
@@ -65,6 +64,19 @@ window.addEventListener('load', function(){
   for(let i = 0; i < li.length; i++){
     
     li[i].addEventListener('click', () => {li[i].style.color = 'red'});
+  }
+  
+  const dropDown = document.querySelector('#dropDown');
+  
+  switch(dropDown.value){
+    
+    case 'a':
+      
+      for(let i = 0; i < breedNames.length; i++){
+        
+        
+      }
+    
   }
   
 });
