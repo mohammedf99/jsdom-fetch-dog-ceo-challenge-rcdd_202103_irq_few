@@ -69,16 +69,6 @@ window.addEventListener('load', function(){
   
   const dropDown = document.querySelector('#dropDown');
   
-  switch(dropDown.value){
-    
-    case 'a':
-      
-      for(let i = 0; i < breedNames.length; i++){
-        
-        
-      }
-    
-  }
   
 });
 
