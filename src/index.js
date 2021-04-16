@@ -52,7 +52,7 @@ function addBreeds(json){
   for(let i = 0; i < breedNames.length; i++){
     
     const breedLi = document.createElement('li');
-    breedLi.append(document.createTextNode(breedNames));
+    breedLi.append(document.createTextNode(breedNames[i]));
     breedUl.append(breedLi);
     
   }
