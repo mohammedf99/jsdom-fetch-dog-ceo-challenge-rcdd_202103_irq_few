@@ -48,15 +48,14 @@ function addBreeds(json){
   
   const breedUl = document.querySelector('#dog-breeds');
   breedNames = Object.keys(json.message);
-  
+  let breedLi;
   for(let i = 0; i < breedNames.length; i++){
     
-    const breedLi = document.createElement('li');
+    breedLi = document.createElement('li');
     breedLi.innerText = breedNames[i];
     breedUl.append(breedLi);
     
   }
-  
   
   breedLi.addEventListener('click', function(){
     
