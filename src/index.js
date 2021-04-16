@@ -75,9 +75,24 @@ window.addEventListener('load', function(){
     
     for(let i = 0; i < breedNames.length; i++){
       
-      if(dropDown.value === breedNames.charAt(0)){
+      if(dropDown.value === breedNames[i].charAt(0)){
         
+        const li = document.createElement('li');
         
+        li.innerText = breedNames[i];
+        breedUl.append(li);
+        
+      }
+      
+      const li = document.querySelectorAll('li');
+      
+      for(const liElement of li){
+        
+        liElement.addEventListener('click', function(){
+          
+          liElement.style.color = 'red';
+          
+        });
         
       }
     }
