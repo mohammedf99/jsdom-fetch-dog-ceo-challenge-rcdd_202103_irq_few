@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function(){
   });
   
   
-  // fetch(BREED_URL).then(function(response){
-  //   return response.json();
-  // }).then(function(json){
-  //   addBreeds(json);
-  // });
+  fetch(BREED_URL).then(function(response){
+    return response.json();
+  }).then(function(json){
+    addBreeds(json);
+  });
   
   
   
@@ -50,13 +50,10 @@ function addBreeds(json){
   
   for(let i = 0; i < breedNames.length; i++){
     
-
-    
     const breedLi = document.createElement('li');
-  
-    breedLi.innerHTML = `<img src="${json[i]}" alt="image breed">`;
+    breedLi.append(document.createTextNode(breedNames));
+    breedUl.append(breedLi);
     
-    breedUl.appendChild(breedLi);
   }
   
 }
