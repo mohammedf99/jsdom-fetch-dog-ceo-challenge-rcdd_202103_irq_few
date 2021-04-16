@@ -69,6 +69,20 @@ window.addEventListener('load', function(){
   
   const dropDown = document.querySelector('#dropDown');
   
+  dropDown.addEventListener('change', function(){
+    
+    breedUl.innerText = '';
+    
+    for(let i = 0; i < breedNames.length; i++){
+      
+      if(dropDown.value === breedNames.charAt(0)){
+        
+        
+        
+      }
+    }
+    
+  });
   
 });
 
