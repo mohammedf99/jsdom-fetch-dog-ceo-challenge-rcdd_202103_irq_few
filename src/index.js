@@ -1,7 +1,7 @@
 console.log('%c HI', 'color: firebrick')
 
 const imgURL = 'https://dog.ceo/api/breeds/image/random/4';
-const BREED_URL = 'https://dog.ceo/api/breeds/list/all';
+const breedURL = 'https://dog.ceo/api/breeds/list/all';
 
 document.addEventListener('DOMContentLoaded', function(){
   
@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function(){
   });
   
   
-  fetch(BREED_URL).then(function(response){
+  fetch(breedURL).then(function(response){
     console.log(response.json());
     // return response.json();
   }).then(function(json){
-    addBreeds(json);
+    // addBreeds(json);
   });
   
   
