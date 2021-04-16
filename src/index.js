@@ -57,7 +57,7 @@ function addBreeds(json){
     
   }
   
-  breedLi.addEventListener('click', function(){
+  breedLi.addEventListener('onmouseover', function(){
     
     breedLi.style.backgroundColor = 'red';
   })
