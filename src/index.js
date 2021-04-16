@@ -64,11 +64,7 @@ window.addEventListener('load', function(){
   const li = document.querySelectorAll('li');
   for(let i = 0; i < li.length; i++){
     
-    li[i].addEventListener('click', function(){
-      
-      li[i].style.color = 'red';
-      
-    });
+    li[i].addEventListener('click', li[i].style.color = 'red');
   }
   
 });
