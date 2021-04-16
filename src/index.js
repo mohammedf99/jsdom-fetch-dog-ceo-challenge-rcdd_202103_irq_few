@@ -41,7 +41,7 @@ function displayImage(json){
   }
 }
 
-let breedNames = Object.keys(json.message);
+let breedNames = [Object.keys(json.message)];
 
 
 function addBreeds(json){
