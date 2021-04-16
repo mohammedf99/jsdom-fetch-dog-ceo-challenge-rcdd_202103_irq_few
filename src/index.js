@@ -67,7 +67,7 @@ window.addEventListener('load', function(){
     li[i].addEventListener('click', () => {li[i].style.color = 'red'});
   }
   
-  const dropDown = document.querySelector('#dropDown');
+  const dropDown = document.querySelector('#breed-dropdown');
   
   dropDown.addEventListener('change', function(){
     
