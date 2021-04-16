@@ -61,7 +61,7 @@ function addBreeds(json){
 
 window.addEventListener('load', function(){
   
-  const li = document.querySelector('li');
+  const li = document.querySelectorAll('li');
   for(let i = 0; i < li.length; i++){
     
     li[i].addEventListener('click', function(){
