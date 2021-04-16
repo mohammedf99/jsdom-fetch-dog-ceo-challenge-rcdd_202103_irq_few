@@ -84,17 +84,6 @@ window.addEventListener('load', function(){
         
       }
       
-      const li = document.querySelectorAll('li');
-      
-      for(const liElement of li){
-        
-        liElement.addEventListener('click', function(){
-          
-          liElement.style.color = 'red';
-          
-        });
-        
-      }
     }
     
   });
