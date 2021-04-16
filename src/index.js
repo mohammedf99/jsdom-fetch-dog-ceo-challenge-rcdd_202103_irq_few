@@ -41,11 +41,11 @@ function displayImage(json){
   }
 }
 
-let breedNames = [Object.keys(json.message)];
+
 
 
 function addBreeds(json){
-  
+  let breedNames = [Object.keys(json.message)];
   const breedUl = document.querySelector('#dog-breeds');
   let breedLi;
   for(let i = 0; i < breedNames.length; i++){
